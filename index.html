@@ -11,66 +11,72 @@
 <body>
     <div class="container mt-5">
         <div class="row">
+            <!-- image section -->
             <div class="col-6">
                 <img src="./images/mac.png" class="w-75">
             </div>
+            <!-- heading section -->
             <div class="col-6">
                 <h1 class="display-6 fw-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
                 <p class="fs-4">Apple M1 chip with 8‑core CPU with 4 performance core and efficiency cores, 7-core GPU, and 16‑core Neural Engine 8GB unified memory 256GB SSD storage 13-inch Retina display with True Tone Backlit Magic Keyboard - US English</p>
+                <!-- button section -->
                 <div class="mt-5">
                     <h3>Memory</h3>
-                    <button class="btn btn-outline-dark">8GB unified memory</button>
-                    <button class="btn btn-outline-dark">16GB unified memory</button>
+                    <button id="8gb-memory" class="btn btn-outline-dark">8GB unified memory</button>
+                    <button id="16gb-memory" class="btn btn-outline-dark">16GB unified memory</button>
                 </div>
                 <div class="mt-5">
                     <h3>Storage</h3>
-                    <button class="btn btn-outline-dark">256GB SSD storage</button>
-                    <button class="btn btn-outline-dark">512 SSD storage</button>
-                    <button class="btn btn-outline-dark">1TB SSD storage</button>
+                    <button id="256gb-storage" class="btn btn-outline-dark">256GB SSD storage</button>
+                    <button id="512gb-storage" class="btn btn-outline-dark">512 SSD storage</button>
+                    <button id="1tb-storage" class="btn btn-outline-dark">1TB SSD storage</button>
                 </div>
                 <div class="mt-5">
                     <h3>Choose your delivery option</h3>
-                    <button class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                    <button id="free-delivery" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="charge-delivery" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
                 </div>
+                <!-- table -->
                 <table class="table w-50 mt-5 fs-5 fw-bold ">
                    <tbody>
                      <tr>
                         <td>Best Price</td>
-                         <td>$1299</td>
+                         <td>$<span id="best-price">1299</span></td>
                      </tr>
                     <tr>
                         <td>Extra Memory Cost</td>
-                        <td>$0</td>
+                        <td>$<span id="extra-memory-cost">0</span></td>
                     </tr>
                     <tr>
                         <td>Extra Storage Cost</td>
-                        <td>$0</td>
+                        <td>$<span id="extra-storage-cost">0</span></td>
                     </tr>
                     <tr>
                         <td>Delivery Cost</td>
-                        <td>$0</td>
+                        <td>$<span id="delivery-cost">0</span></td>
                     </tr>
                    </tbody>
                    <tfoot>
                     <tr>
                         <td>Total Price</td>
-                        <td>$1299</td>
+                        <td>$<span class="total-price">1299</span></td>
                     </tr>
                    </tfoot>
                   </table>
                   <div>
                       <h6 class="fs-6">Add Pomo Code</h6>
                       <div class="input-group w-50">
-                        <input type="text" class="form-control" >
-                        <button class="btn btn-danger">Apply</button>
+                        <input type="text" class="form-control" id="input" >
+                        <button class="btn btn-danger" id="apply">Apply</button>
                       </div>
                   </div>
             </div>
         </div>
         <hr>
         <!-- footer -->
-        <h1 class="text-center mb-5">Total: $<span>1299</span></h1>
+        <h1  class="text-center mb-5">Total: $<span class="total-price" id="total">1299</span></h1>
     </div>
+    <!-- script -->
+    <script src="./script/app.js"></script>
 </body>
 </html>
